@@ -2,7 +2,7 @@ resource "aws_lambda_function" "instance" {
   function_name = "project-template-backend"
   filename      = "${path.module}/dummy-lambda-package/lambda.zip" // Simple hello world application
   role          = aws_iam_role.instance.arn
-  handler       = "index.handler"
+  handler       = "app.handler"
   runtime       = "nodejs24.x"
   timeout       = 30  // seconds
   memory_size   = 512 // MB
