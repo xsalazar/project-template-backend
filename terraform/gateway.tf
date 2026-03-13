@@ -4,7 +4,7 @@ resource "aws_apigatewayv2_api" "instance" {
   disable_execute_api_endpoint = false
 
   cors_configuration {
-    allow_origins = ["xsalazar.com"]
+    allow_origins = ["https://xsalazar.com"]
     allow_methods = ["GET"]
     allow_headers = ["*"]
   }
